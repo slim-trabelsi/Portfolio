@@ -10,6 +10,112 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.projects-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+				gap: 24px;
+				margin-top: 20px;
+			}
+
+			.project-card {
+				background: #fff;
+				border: 1px solid #e0e0e0;
+				border-radius: 10px;
+				padding: 24px;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				transition: box-shadow 0.25s ease, transform 0.25s ease;
+			}
+
+			.project-card:hover {
+				box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+				transform: translateY(-4px);
+			}
+
+			.project-card h3 {
+				font-size: 1rem;
+				font-weight: 700;
+				margin: 0;
+				color: #2c2c2c;
+				line-height: 1.4;
+			}
+
+			.project-card p {
+				font-size: 0.875rem;
+				color: #666;
+				line-height: 1.6;
+				margin: 0;
+				flex: 1;
+			}
+
+			.project-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 7px;
+			}
+
+			.project-tags span {
+				background: #f0f0f5;
+				color: #555;
+				font-size: 0.72rem;
+				font-weight: 600;
+				padding: 4px 10px;
+				border-radius: 20px;
+				border: 1px solid #ddd;
+			}
+
+			.project-actions {
+				display: flex;
+				gap: 10px;
+				margin-top: 4px;
+			}
+
+			.btn-github {
+				flex: 1;
+				padding: 9px 0;
+				font-size: 0.85rem;
+				font-weight: 600;
+				border-radius: 6px;
+				border: 1px solid #ccc;
+				background: transparent;
+				color: #333;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				transition: background 0.2s, color 0.2s;
+				display: inline-block;
+			}
+
+			.btn-github:hover {
+				background: #f5f5f5;
+				color: #111;
+				text-decoration: none;
+			}
+
+			.btn-demo {
+				flex: 1;
+				padding: 9px 0;
+				font-size: 0.85rem;
+				font-weight: 600;
+				border-radius: 6px;
+				border: none;
+				background: #6c63ff;
+				color: #fff;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				transition: background 0.2s;
+				display: inline-block;
+			}
+
+			.btn-demo:hover {
+				background: #574fd6;
+				color: #fff;
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -36,77 +142,97 @@
 										<h2>My Projects</h2>
 									</header>
 
-									<!-- Project 1 -->
-									<div class="edu-timeline" style="border-left:2px solid #ccc;margin-left:10px;padding-left:25px;display:flex;flex-direction:column;gap:25px;">
+									<div class="projects-grid">
 
-										<div style="position:relative;">
-											<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-												<strong>Design of a Line-Following Robot</strong>
-												<span>2024</span>
+										<!-- Card 1 -->
+										<div class="project-card">
+											<h3>Line-Following Robot</h3>
+											<p>Designed and assembled a line-following robot as part of ENIT Robotics Club. Programmed the control logic using Arduino (C++) and integrated infrared sensors for line detection.</p>
+											<div class="project-tags">
+												<span>Arduino</span>
+												<span>C++</span>
+												<span>Electronics</span>
+												<span>SolidWorks</span>
 											</div>
-											<p style="margin:4px 0;">ENIT Robotics Club</p>
-											<p style="color:#aaa;font-size:0.9em;">Arduino · C++ · Electronics · Mechanical Design</p>
-											<ul style="margin:6px 0;padding-left:18px;color:#555;">
-												<li>Designed and assembled the mechanical chassis</li>
-												<li>Programmed the control logic using Arduino (C++)</li>
-												<li>Integrated infrared sensors for line detection</li>
-											</ul>
+											<div class="project-actions">
+												<a href="#" class="btn-github">GitHub</a>
+												<a href="#" class="btn-demo">Demo</a>
+											</div>
 										</div>
 
-										<div style="position:relative;">
-											<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-												<strong>All-Terrain Robot Design</strong>
-												<span>2025</span>
+										<!-- Card 2 -->
+										<div class="project-card">
+											<h3>All-Terrain Robot Design</h3>
+											<p>3D modeled and fabricated an all-terrain robot for national robotics competition. Handled wiring, coding, mechanical design, and assembly of all components.</p>
+											<div class="project-tags">
+												<span>SolidWorks</span>
+												<span>Arduino</span>
+												<span>Robotics</span>
+												<span>Fabrication</span>
 											</div>
-											<p style="margin:4px 0;">ENIT Robotics Club</p>
-											<p style="color:#aaa;font-size:0.9em;">SolidWorks · Arduino · Robotics · Fabrication</p>
-											<ul style="margin:6px 0;padding-left:18px;color:#555;">
-												<li>3D modeling of the robot structure using SolidWorks</li>
-												<li>Wiring and assembly of electronic components</li>
-												<li>Participated in national robotics competition</li>
-											</ul>
+											<div class="project-actions">
+												<a href="#" class="btn-github">GitHub</a>
+												<a href="#" class="btn-demo">Demo</a>
+											</div>
 										</div>
 
-										<div style="position:relative;">
-											<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-												<strong>Structural Analysis of a Mechanical Component</strong>
-												<span>2025</span>
+										<!-- Card 3 -->
+										<div class="project-card">
+											<h3>Structural Analysis — FEM</h3>
+											<p>Performed finite element analysis (FEA) on a mechanical component using Abaqus. Modeled geometry in SolidWorks and analyzed stress, strain, and deformation results.</p>
+											<div class="project-tags">
+												<span>Abaqus</span>
+												<span>FEM</span>
+												<span>SolidWorks</span>
+												<span>Structural Analysis</span>
 											</div>
-											<p style="margin:4px 0;">ENIT — Academic Project</p>
-											<p style="color:#aaa;font-size:0.9em;">Abaqus · FEM · SolidWorks · Structural Analysis</p>
-											<ul style="margin:6px 0;padding-left:18px;color:#555;">
-												<li>Modeled the component geometry in SolidWorks</li>
-												<li>Performed finite element analysis (FEA) using Abaqus</li>
-												<li>Analyzed stress, strain, and deformation results</li>
-											</ul>
+											<div class="project-actions">
+												<a href="#" class="btn-github">GitHub</a>
+											</div>
 										</div>
 
-										<div style="position:relative;">
-											<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-												<strong>CFD Simulation — Fluid Flow Study</strong>
-												<span>2025</span>
+										<!-- Card 4 -->
+										<div class="project-card">
+											<h3>CFD Simulation — Fluid Flow Study</h3>
+											<p>Set up and ran CFD simulations using Ansys Fluent. Analyzed velocity, pressure, and temperature fields, and produced a technical report of the results.</p>
+											<div class="project-tags">
+												<span>Ansys Fluent</span>
+												<span>CFD</span>
+												<span>Thermodynamics</span>
 											</div>
-											<p style="margin:4px 0;">ENIT — Academic Project</p>
-											<p style="color:#aaa;font-size:0.9em;">Ansys Fluent · CFD · Thermodynamics</p>
-											<ul style="margin:6px 0;padding-left:18px;color:#555;">
-												<li>Set up and ran CFD simulations using Ansys Fluent</li>
-												<li>Analyzed velocity, pressure, and temperature fields</li>
-												<li>Interpreted results and produced a technical report</li>
-											</ul>
+											<div class="project-actions">
+												<a href="#" class="btn-github">GitHub</a>
+											</div>
 										</div>
 
-										<div style="position:relative;">
-											<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-												<strong>Metal Structure Design — Future Pub</strong>
-												<span>2020 – Present</span>
+										<!-- Card 5 -->
+										<div class="project-card">
+											<h3>Metal Structure Design — Future Pub</h3>
+											<p>Designed metal structures in 3D using SolidWorks for a professional client. Manufactured parts through welding and milling, and handled on-site installation.</p>
+											<div class="project-tags">
+												<span>SolidWorks</span>
+												<span>Welding</span>
+												<span>Fabrication</span>
+												<span>MAG</span>
 											</div>
-											<p style="margin:4px 0;">Professional Project</p>
-											<p style="color:#aaa;font-size:0.9em;">SolidWorks · Welding · Fabrication · On-site Installation</p>
-											<ul style="margin:6px 0;padding-left:18px;color:#555;">
-												<li>Designed metal structures in 3D using SolidWorks</li>
-												<li>Manufactured parts using welding, turning, and milling</li>
-												<li>Handled on-site assembly and installation</li>
-											</ul>
+											<div class="project-actions">
+												<a href="#" class="btn-github">GitHub</a>
+											</div>
+										</div>
+
+										<!-- Card 6 -->
+										<div class="project-card">
+											<h3>Minecraft Server — Plugin Development</h3>
+											<p>Designed and implemented custom gameplay systems. Developed and optimized plugins to enhance performance and UX in a multiplayer environment.</p>
+											<div class="project-tags">
+												<span>Java</span>
+												<span>Game Dev</span>
+												<span>Server-side</span>
+											</div>
+											<div class="project-actions">
+												<a href="#" class="btn-github">GitHub</a>
+												<a href="#" class="btn-demo">Demo</a>
+											</div>
 										</div>
 
 									</div>
