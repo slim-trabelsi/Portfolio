@@ -166,6 +166,7 @@
 
 								</div>
 							</div>
+
 							<div class="project-card">
 								<div class="card-title">CAD Mini-Project – Vane Pump</div>
 								<div class="card-desc">Designed and modeled a vane pump as part of a CAD mini-project.</div>
@@ -175,7 +176,21 @@
 									<span>Mechanical Systems</span>
 								</div>
 								<div class="card-actions">
-									<a href="https://www.youtube.com/watch?v=-p1BFSPk_hs" class="btn-gh">Video</a>
+									<a class="btn-gh" onclick="document.getElementById('videoModalVane').style.display='flex'">Video</a>
+								</div>
+							</div>
+
+							<!-- Modal Video YouTube -->
+							<div id="videoModalVane" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;" onclick="if(event.target===this){this.style.display='none'; document.getElementById('ytVane').src=document.getElementById('ytVane').src;}">
+								<div style="background:#fff; border-radius:12px; width:92%; max-width:700px; overflow:hidden;">
+
+									<div style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee;">
+										<span style="font-size:15px; font-weight:500;">CAD Mini-Project – Vane Pump</span>
+										<button onclick="document.getElementById('videoModalVane').style.display='none'; document.getElementById('ytVane').src=document.getElementById('ytVane').src;" style="background:none; border:none; font-size:20px; cursor:pointer; color:#666;">&#x2715;</button>
+									</div>
+
+									<iframe id="ytVane" src="https://www.youtube.com/embed/-p1BFSPk_hs" style="width:100%; aspect-ratio:16/9; display:block; border:none;" allowfullscreen></iframe>
+
 								</div>
 							</div>
 
@@ -190,9 +205,24 @@
 									<span>SolidWorks</span>
 								</div>
 								<div class="card-actions">
-									<a href="https://www.youtube.com/watch?v=LquuEQ2r7Ek" class="btn-demo">Video</a>
+									<a class="btn-demo" onclick="document.getElementById('videoModalRobot').style.display='flex'">Video</a>
 								</div>
 							</div>
+
+							<!-- Modal Video YouTube -->
+							<div id="videoModalRobot" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;" onclick="if(event.target===this){this.style.display='none'; document.getElementById('ytRobot').src=document.getElementById('ytRobot').src;}">
+								<div style="background:#fff; border-radius:12px; width:92%; max-width:700px; overflow:hidden;">
+
+									<div style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee;">
+										<span style="font-size:15px; font-weight:500;">Line-Following Robot + All-Terrain Robot</span>
+										<button onclick="document.getElementById('videoModalRobot').style.display='none'; document.getElementById('ytRobot').src=document.getElementById('ytRobot').src;" style="background:none; border:none; font-size:20px; cursor:pointer; color:#666;">&#x2715;</button>
+									</div>
+
+									<iframe id="ytRobot" src="https://www.youtube.com/embed/LquuEQ2r7Ek" style="width:100%; aspect-ratio:16/9; display:block; border:none;" allowfullscreen></iframe>
+
+								</div>
+							</div>
+
 							<!-- Card 3 -->
 							<div class="project-card">
 								<div class="card-title">Structural Analysis — FEM</div>
@@ -204,23 +234,50 @@
 									<span>Structural Analysis</span>
 								</div>
 								<div class="card-actions">
-									<a href="https://www.youtube.com/watch?v=4XI7qkP5o80" class="btn-gh">Video</a>
+									<a class="btn-gh" onclick="document.getElementById('videoModalFEM').style.display='flex'">Video</a>
+								</div>
+							</div>
+
+							<!-- Modal Video YouTube -->
+							<div id="videoModalFEM" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;" onclick="if(event.target===this){this.style.display='none'; document.getElementById('ytFEM').src=document.getElementById('ytFEM').src;}">
+								<div style="background:#fff; border-radius:12px; width:92%; max-width:700px; overflow:hidden;">
+
+									<div style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee;">
+										<span style="font-size:15px; font-weight:500;">Structural Analysis — FEM</span>
+										<button onclick="document.getElementById('videoModalFEM').style.display='none'; document.getElementById('ytFEM').src=document.getElementById('ytFEM').src;" style="background:none; border:none; font-size:20px; cursor:pointer; color:#666;">&#x2715;</button>
+									</div>
+
+									<iframe id="ytFEM" src="https://www.youtube.com/embed/4XI7qkP5o80" style="width:100%; aspect-ratio:16/9; display:block; border:none;" allowfullscreen></iframe>
+
 								</div>
 							</div>
 
 							<!-- Card 4 -->
-							<div class="project-card">
-								<div class="card-title">Electric Wood-Cutting Saw – BE Project</div>
-								<div class="card-desc">Designed and built an electric saw for cutting wood,Used a high-torque motor and a basic blade setup. Modeled the frame with SolidWorks.</div>
-								<div class="card-tags">
-									<span>Mechanical Design</span>
-									<span>SolidWorks</span>
-								</div>
-								<div class="card-actions">
-									<a href="https://www.youtube.com/watch?v=R7XAgUEqvYo" class="btn-gh">Video</a>
-								</div>
+						<div class="project-card">
+							<div class="card-title">Electric Wood-Cutting Saw – BE Project</div>
+							<div class="card-desc">Designed and built an electric saw for cutting wood, Used a high-torque motor and a basic blade setup. Modeled the frame with SolidWorks.</div>
+							<div class="card-tags">
+								<span>Mechanical Design</span>
+								<span>SolidWorks</span>
 							</div>
+							<div class="card-actions">
+								<a class="btn-gh" onclick="document.getElementById('videoModalSaw').style.display='flex'">Video</a>
+							</div>
+						</div>
 
+						<!-- Modal Video YouTube -->
+						<div id="videoModalSaw" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;" onclick="if(event.target===this){this.style.display='none'; document.getElementById('ytSaw').src=document.getElementById('ytSaw').src;}">
+							<div style="background:#fff; border-radius:12px; width:92%; max-width:700px; overflow:hidden;">
+
+									<div style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee;">
+										<span style="font-size:15px; font-weight:500;">Electric Wood-Cutting Saw – BE Project</span>
+										<button onclick="document.getElementById('videoModalSaw').style.display='none'; document.getElementById('ytSaw').src=document.getElementById('ytSaw').src;" style="background:none; border:none; font-size:20px; cursor:pointer; color:#666;">&#x2715;</button>
+									</div>
+
+									<iframe id="ytSaw" src="https://www.youtube.com/embed/R7XAgUEqvYo" style="width:100%; aspect-ratio:16/9; display:block; border:none;" allowfullscreen></iframe>
+
+							</div>
+						</div>
 						<!-- Card 5 -->
 						<div class="project-card">
 							<div class="card-title">Metal Structure Design — Future Pub</div>
@@ -293,7 +350,21 @@
 									<span>Event Planning</span>
 								</div>
 								<div class="card-actions">
-									<a href="#" class="btn-gh">More Details</a>
+									<a class="btn-gh" onclick="document.getElementById('videoModalClub').style.display='flex'">More Details</a>
+								</div>
+							</div>
+
+							<!-- Modal Video YouTube -->
+							<div id="videoModalClub" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;" onclick="if(event.target===this){this.style.display='none'; document.getElementById('ytClub').src=document.getElementById('ytClub').src;}">
+								<div style="background:#fff; border-radius:12px; width:92%; max-width:700px; overflow:hidden;">
+
+										<div style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee;">
+											<span style="font-size:15px; font-weight:500;">Board Member – Robotics Club</span>
+											<button onclick="document.getElementById('videoModalClub').style.display='none'; document.getElementById('ytClub').src=document.getElementById('ytClub').src;" style="background:none; border:none; font-size:20px; cursor:pointer; color:#666;">&#x2715;</button>
+										</div>
+
+										<iframe id="ytClub" src="https://www.youtube.com/embed/9x6mO9p24k0" style="width:100%; aspect-ratio:16/9; display:block; border:none;" allowfullscreen></iframe>
+
 								</div>
 							</div>
 						</div>
