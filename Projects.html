@@ -149,7 +149,7 @@
 									<span>Geometric Design</span>
 								</div>
 								<div class="card-actions">
-									<a href="#" class="btn-gh">Video</a>
+									<a href="https://www.youtube.com/watch?v=Pb8X4wO3vtU" class="btn-gh">Video</a>
 								</div>
 							</div>
 
@@ -162,14 +162,14 @@
 									<span>Mechanical Systems</span>
 								</div>
 								<div class="card-actions">
-									<a href="#" class="btn-gh">Video</a>
+									<a href="https://www.youtube.com/watch?v=-p1BFSPk_hs" class="btn-gh">Video</a>
 								</div>
 							</div>
 
 							<!-- Card 1 -->
 							<div class="project-card">
-								<div class="card-title">Line-Following Robot</div>
-								<div class="card-desc">Designed and assembled a line-following robot as part of ENIT Robotics Club. Programmed control logic with Arduino (C++) and integrated infrared sensors for line detection.</div>
+								<div class="card-title">Line-Following Robot+All-Terrain Robot</div>
+								<div class="card-desc">Designed and assembled a line-following robot and an All-Terrain Robot as part of ENIT Robotics Club. Programmed control logic with Arduino (C++) and integrated infrared sensors for line detection.</div>
 								<div class="card-tags">
 									<span>Arduino</span>
 									<span>C++</span>
@@ -177,25 +177,9 @@
 									<span>SolidWorks</span>
 								</div>
 								<div class="card-actions">
-									<a href="#" class="btn-demo">Photos</a>
+									<a href="https://www.youtube.com/watch?v=LquuEQ2r7Ek" class="btn-demo">Video</a>
 								</div>
 							</div>
-
-							<!-- Card 2 -->
-							<div class="project-card">
-								<div class="card-title">All-Terrain Robot Design</div>
-								<div class="card-desc">3D modeled and fabricated an all-terrain robot for a national robotics competition. Handled wiring, coding, mechanical design, and full assembly.</div>
-								<div class="card-tags">
-									<span>SolidWorks</span>
-									<span>Arduino</span>
-									<span>Robotics</span>
-									<span>Fabrication</span>
-								</div>
-								<div class="card-actions">
-									<a href="#" class="btn-demo">Photos</a>
-								</div>
-							</div>
-
 							<!-- Card 3 -->
 							<div class="project-card">
 								<div class="card-title">Structural Analysis — FEM</div>
@@ -207,7 +191,7 @@
 									<span>Structural Analysis</span>
 								</div>
 								<div class="card-actions">
-									<a href="#" class="btn-gh">Video</a>
+									<a href="https://www.youtube.com/watch?v=4XI7qkP5o80" class="btn-gh">Video</a>
 								</div>
 							</div>
 
@@ -220,24 +204,59 @@
 									<span>SolidWorks</span>
 								</div>
 								<div class="card-actions">
-									<a href="#" class="btn-gh">Video</a>
+									<a href="https://www.youtube.com/watch?v=R7XAgUEqvYo" class="btn-gh">Video</a>
 								</div>
 							</div>
 
-							<!-- Card 5 -->
-							<div class="project-card">
-								<div class="card-title">Metal Structure Design — Future Pub</div>
-								<div class="card-desc">Designed metal structures in 3D using SolidWorks. Manufactured parts through welding (MAG) and milling, and handled on-site installation.</div>
-								<div class="card-tags">
-									<span>SolidWorks</span>
-									<span>Welding</span>
-									<span>Fabrication</span>
-									<span>MAG</span>
-								</div>
-								<div class="card-actions">
-									<a href="#" class="btn-gh">Photos</a>
-								</div>
+						<!-- Card 5 -->
+						<div class="project-card">
+							<div class="card-title">Metal Structure Design — Future Pub</div>
+							<div class="card-desc">Designed metal structures in 3D using SolidWorks. Manufactured parts through welding (MAG) and milling, and handled on-site installation.</div>
+							<div class="card-tags">
+								<span>SolidWorks</span>
+								<span>Welding</span>
+								<span>Fabrication</span>
+								<span>MAG</span>
 							</div>
+							<div class="card-actions">
+								<a class="btn-gh" onclick="document.getElementById('galleryModal2').style.display='flex'">Photos</a>
+							</div>
+						</div>
+
+						<!-- Modal galerie -->
+						<div id="galleryModal2" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; align-items:center; justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+						<div style="background:#fff; border-radius:12px; width:92%; max-width:700px; max-height:85vh; overflow-y:auto;">
+							
+							<div style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee; position:sticky; top:0; background:#fff;">
+							<span style="font-size:15px; font-weight:500;">Metal Structure Design — Future Pub</span>
+							<button onclick="document.getElementById('galleryModal2').style.display='none'" style="background:none; border:none; font-size:20px; cursor:pointer; color:#666;">&#x2715;</button>
+							</div>
+
+							<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px; padding:4px;">
+							<img src="images/1.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/2.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/3.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/4.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/5.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/6.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/7.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/8.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/9.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/10.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/11.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/12.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/13.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/14.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							<img src="images/15.jpg" onclick="document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').src=this.src;" style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer;">
+							</div>
+
+						</div>
+						</div>
+
+						<!-- Lightbox (ajoute-le une seule fois dans ta page si pas déjà présent) -->
+						<div id="lb" onclick="this.style.display='none'" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:2000; align-items:center; justify-content:center; cursor:zoom-out;">
+						<img id="lb-img" src="" style="max-width:90%; max-height:90vh; border-radius:8px; object-fit:contain;">
+						</div>
 
 
 
